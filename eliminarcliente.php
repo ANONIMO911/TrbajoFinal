@@ -97,6 +97,9 @@
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
         <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link" href="admistracion.html">Inicio</a>
+        </li>
           <a class="nav-link" href="contacto.php">Ingresar Cliente</a>
         </li>
         <li class="nav-item">

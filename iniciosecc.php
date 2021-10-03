@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
         <div class="view">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/03/05/20/04/appetite-1238636_960_720.jpg 1x, https://cdn.pixabay.com/photo/2016/03/05/20/04/appetite-1238636_1280.jpg 2x" alt="First slide">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/08/07/01/16/inside-2598319_640.jpg 1x, https://cdn.pixabay.com/photo/2017/08/07/01/16/inside-2598319_1280.jpg 2x" alt="First slide">
           <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
@@ -37,7 +37,7 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_960_720.jpg 1x, https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg 2x" alt="Second slide">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083376_640.jpg" alt="Second slide">
           <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
@@ -48,7 +48,7 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg 1x, https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg 2x" alt="Third slide">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/07/02/10/38/woman-828888_640.jpg 1x, https://cdn.pixabay.com/photo/2015/07/02/10/38/woman-828888_1280.jpg 2x" alt="Third slide">
           <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
@@ -69,25 +69,25 @@
     </a>
     <!--/.Controls-->
   </div>
-</div>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Barra de Menú</a>
-  <button class="navba-toggler" type="button" data-toggle="collapse" data-target="#collpasibleNavar">
-    <span   class ="glyphicon glyphicon-Sort- sub-atributos"> </span> 
-    </span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="collpasibleNavar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="contacto2.php">Conviértete en afiliado</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="iniciosecc.php">Su cuenta</a>
-      </li>
-    </ul>
   </div>
-</nav>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Barra de Menú</a>
+    <button class="navba-toggler" type="button" data-toggle="collapse" data-target="#collpasibleNavar">
+      <span   class ="glyphicon glyphicon-Sort- sub-atributos"> </span> 
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collpasibleNavar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="contacto2.php">Conviértete en afiliado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  active" href="iniciosecc.php">Su cuenta</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 <div class="container" style="margin-top: 30px;">
   <div class="row">
     <div class="col-sm-2">
@@ -97,51 +97,59 @@
           <a class="nav-link" href="index.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="carritotipico.html">Carrito Tipico</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gastronomia.html">Carrito Rapidas</a>
+          <a class="nav-link" href="gastronomia.html">Gastronomía</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="galeria.html">Galería</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="fechas.html">Fechas especiales</a>
+          <a class="nav-link" href="fechas.html">Fechas especiales</a>
         </li>
       </ul>
       <hr class=" d-sm-nome">
     </div>
-    <div class="col-sm-2 cen">
-    </div>  
-    <div class="col-sm-6 cen">
-      <br><br>
+    <div class="col-sm-10">
+      
       <div class="row">
-        
-        <h1 class="text-primary">Agenda tú día especial</h1>
+        <div class="container-fluid">
+          <div  class="container py-5">
+            <form action="ingresouser.php" method="POST">
+              <div class="form-group">
+                <label for="CORREO">Email address:</label>
+                <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-light"><i class='fa fa-envelope'></i></span>
+                </div>
+                <input type="email" class="form-control" placeholder="Enter email" id="CORREO" name="CORREO">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="PASSWORD">Password:</label>
+                <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-light"><i class='fa fa-unlock-alt'></i></i></span>
+                </div>
+                <input type="password" class="form-control" placeholder="Enter password" id="PASSWORD" name="PASSWORD">
+                </div>
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>    
+    </div>
   </div>
 </div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-2">
-    </div>
-    <div class="col-sm-10 cen">
-      <div class="row">
-        <iframe src="https://calendar.google.com/calendar/embed?src=d0968s4ecmbfanein521ifgj10%40group.calendar.google.com&ctz=America%2FBogota" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-
-
   <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark bg-dark">
   <!-- Footer Links -->
   <div class="container text-center text-md-left mt-5">
     <!-- Grid row -->
-    <br><br>
     <div class="row mt-3">
 
       <!-- Grid column -->
@@ -186,9 +194,7 @@
         <p>
           <a href="contacto.php" class="text-white">Conviértete en afiliado</a>
         </p>
-        <p>
-          <a href="index.php" class="text-white">Agregar usuario</a>
-        </p>
+
       </div>
       <!-- Grid column -->
 
@@ -217,7 +223,7 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright
+  <div class="footer-copyright text-center py-3 text-white">©️ 2020 Copyright
     
   </div>
   <!-- Copyright -->

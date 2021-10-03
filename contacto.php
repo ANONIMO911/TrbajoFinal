@@ -85,7 +85,7 @@
         <a class="nav-link" href="contacto.php">Conviértete en afiliado</a>
       </li>
         <li class="nav-item">
-          <a class="nav-link" href="iniciosecc.html">Su cuenta</a>
+          <a class="nav-link" href="iniciosecc.php">Su cuenta</a>
         </li>
       </ul>
     </div>
@@ -96,7 +96,7 @@
       <h2>Menú</h2>
       <ul class="nav nav-pills flex-column">
       <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="admistracion.html">Inicio</a>
         </li>
       <li class="nav-item">
           <a class="nav-link active" href="contacto.php">Ingresar Cliente</a>
@@ -120,18 +120,22 @@
       && (isset($_POST['NOM_CLIENTE']) && !empty($_POST['NOM_CLIENTE']))
       && (isset($_POST['APELLIDO_CLIENTE']) && !empty($_POST['APELLIDO_CLIENTE']))
       && (isset($_POST['DIRECCION_CLIENTE']) && !empty($_POST['DIRECCION_CLIENTE']))
-      && (isset($_POST['TELEF_CLIENT']) && !empty($_POST['TELEF_CLIENT']))){
+      && (isset($_POST['TELEF_CLIENT']) && !empty($_POST['TELEF_CLIENT']))
+      && (isset($_POST['CORREO']) && !empty($_POST['CORREO']))
+      && (isset($_POST['PASSWORD']) && !empty($_POST['PASSWORD']))){
 
         $ID_CLIENTE = $_POST['ID_CLIENTE'];
         $NOM_CLIENTE = $_POST['NOM_CLIENTE'];
         $APELLIDO_CLIENTE = $_POST['APELLIDO_CLIENTE'];
         $DIRECCION_CLIENTE = $_POST['DIRECCION_CLIENTE'];
         $TELEF_CLIENT = $_POST['TELEF_CLIENT'];
+        $CORREO = $_POST['CORREO'];
+        $PASSWORD = $_POST['PASSWORD'];
 
         
         
 
-        $query = "INSERT INTO `clientes` (ID_CLIENTE, NOM_CLIENTE, APELLIDO_CLIENTE, DIRECCION_CLIENTE,TELEF_CLIENT) VALUES ('$ID_CLIENTE', '$NOM_CLIENTE', '$APELLIDO_CLIENTE', '$DIRECCION_CLIENTE','$TELEF_CLIENT')";
+        $query = "INSERT INTO `clientes` (ID_CLIENTE, NOM_CLIENTE, APELLIDO_CLIENTE, DIRECCION_CLIENTE,TELEF_CLIENT, CORREO, PASSWORD) VALUES ('$ID_CLIENTE', '$NOM_CLIENTE', '$APELLIDO_CLIENTE', '$DIRECCION_CLIENTE','$TELEF_CLIENT', '$CORREO', '$PASSWORD')";
           $result = mysqli_query($connection, $query);
           echo "<center>Tú mensaje fue enviado con exito </br nos pondremos en contacto con usted pronto.</center>";
         
@@ -192,7 +196,27 @@
               </div>
             </div>
 
-            
+            <div class="form-group">
+              <label for="CORREO">Email:</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-light"><i class='fa fa-envelope'></i></span>
+                </div>
+                <input type="email" class="form-control" placeholder="Ingrese su correo" id="CORREO" name="CORREO" required>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="PASSWORD">Password:</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-light"><i class='fa fa-unlock-alt'></i></i></span>
+                </div>
+                <input type="password" class="form-control" placeholder="Ingrese su contraseña" id="PASSWORD" name="PASSWORD" required>
+              </div>
+            </div>
+
 						<button class="btn btn-lg btn-primary btn-block" type="submit">Enviar Formulario</button>
      			</form>
           </div>

@@ -26,7 +26,7 @@
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
         <div class="view">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/03/05/20/04/appetite-1238636_960_720.jpg 1x, https://cdn.pixabay.com/photo/2016/03/05/20/04/appetite-1238636_1280.jpg 2x" alt="First slide">
+          <img class="d-block w-100" src="https://conocedores.com/wp-content/uploads/2019/03/bandeja-paisa-08032019.jpg" alt="First slide">
           <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
@@ -37,7 +37,7 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_960_720.jpg 1x, https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg 2x" alt="Second slide">
+          <img class="d-block w-100" src="https://images3.alphacoders.com/105/thumb-1920-1057714.jpg" alt="Second slide">
           <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
@@ -48,7 +48,7 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg 1x, https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg 2x" alt="Third slide">
+          <img class="d-block w-100" src="http://img1.wsimg.com/isteam/ip/0de336ed-72cb-4bc5-949e-e5cb5572e390/Captura%20de%20Pantalla%202020-11-11%20a%20la(s)%2012.25.4.png" alt="Third slide">
           <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
@@ -80,11 +80,11 @@
   <div class="collapse navbar-collapse" id="collpasibleNavar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="contacto2.php">Conviértete en afiliado</a>
+       <!-- <a class="nav-link" href="contacto2.php">Conviértete en afiliado</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="iniciosecc.php">Su cuenta</a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>
@@ -94,20 +94,22 @@
       <h2>Menú</h2>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link" href="clienteingreso.html">Inicio</a>
+         <a class="nav-link" href="">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="carritotipico.html">Comidas Tipicas</a>
+          <a class="nav-link active" href="carritopaga.html">Comidas Tipicas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="gastronomia.html">Comidas Rapidas</a>
+          <a class="nav-link" href="carritopaga2.html">Comidas Rápidas</a>
         </li>
+        <a class="nav-link" href="clienteingreso.html">Cerrar session</a>
+      </li>
         <li class="nav-item">
-          <a class="nav-link" href="galeria.html">Galería</a>
+        <!--  <a class="nav-link" href="galeria.html">Galería</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="fechas.html">Fechas especiales</a>
-        </li>
+        </li> -->
       </ul>
       <hr class=" d-sm-nome">
     </div>
@@ -130,7 +132,7 @@
                 <div class="simpleCart_items"></div>
                 <div class="opciones">
                   <a class="boton simpleCart_empty" href="javascript:void(0)">Vaciar carrito</a>
-                  <a class="boton simpleCart_checkout" href="contacto2.php">Checkout</a>
+                  <a class="boton simpleCart_checkout" href="#">Checkout</a>
                 </div>
               </div>
     
@@ -144,91 +146,126 @@
             todos los items de un loop lo deben de tener -->
           <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
             <!-- Nombre del producto se obtiene al agregar la clase (item_name) -->
-            <h2 class="item_name">Hamburguesa Sencilla</h2>
+            <h2 class="item_name">Sancocho</h2>
             <!-- Imagen del producto se obtiene al agregar la clase (item_image) -->
-            <img class="item_image" src="./scss/img/hambsencilla.JPG" alt="Hamburguesa Sencilla" style="width: 200px;"/>
+            <img class="item_image" src="./scss/img/IMG2/sancochoo.JPG" alt="Sancocho" style="width: 200px;"/>
             <!-- Cantidad a requerir del producto se obtiene al agregar la clase (item_Quantity) -->
             <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
             <!-- Precio del producto se obtiene al agregar la clase (item_price) -->
-            <div class="item_price">$7000</div>
+            <div class="item_price">$4500</div>
             <!-- Añadir el producto al carrito, se logra agregando la clase (item_add) -->
             <a class="item_add" href="javascript:;"> Añadir al carrito </a>
           </div>
           <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
-            <h2 class="item_name">Hamburguesa Doble</h2>
-            <img class="item_image" src="./scss/img/hambdoble.JPG" alt="Hamburguesa Doble" style="width: 200px;"/>
+            <h2 class="item_name">Bandeja Paisa</h2>
+            <img class="item_image" src="./scss/img/IMG2/bandeja paisa.JPG" alt="Bandeja Paisa" style="width: 200px;"/>
             <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
             <div class="item_price">$12000</div>
             <a class="item_add" href="javascript:;"> Añadir al carrito </a>
           </div>
           <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
-            <h2 class="item_name">Perro Sencillo</h2>
-            <img class="item_image" src="./scss/img/perrosencillo.JPG" alt="Perro Sencillo" style="width: 200px;"/>
+            <h2 class="item_name">Desayuno Especial</h2>
+            <img class="item_image" src="./scss/img/IMG2/desayuno especial.jpg" alt="Desayuno Especial" style="width: 200px;"/>
             <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
-            <div class="item_price">$5000</div>
+            <div class="item_price">$6000</div>
             <a class="item_add" href="javascript:;"> Añadir al carrito </a>
           </div>
           <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
-            <h2 class="item_name">Perras</h2>
-            <img class="item_image" src="./scss/img/perra.JPG" alt="Perras" style="width: 200px;"/>
+            <h2 class="item_name">Ajiaco Santandereano</h2>
+            <img class="item_image" src="./scss/img/IMG2/ajiacosantandereano.jpg" alt="Ajiaco Santandereano" style="width: 200px;"/>
+            <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
+            <div class="item_price">$7000</div>
+            <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+          </div>
+          <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+            <h2 class="item_name">Bandeja Normal</h2>
+            <img class="item_image" src="./scss/img/IMG2/bandeja normal.jpg" alt="Bandeja Normal" style="width: 200px;"/>
             <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
             <div class="item_price">$9000</div>
             <a class="item_add" href="javascript:;"> Añadir al carrito </a>
           </div>
           <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
-            <h2 class="item_name">Manzanas Caramelizadas</h2>
-            <img class="item_image" src="./scss/img/manza.JPG" alt="Manzanas Caramelizadas" style="width: 200px;"/>
+            <h2 class="item_name">Almuerzo Especial</h2>
+            <img class="item_image" src="./scss/img/IMG2/almuerzo especial.jpg" alt="Almuerzo Especial" style="width: 200px;"/>
             <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
-            <div class="item_price">$7000</div>
+            <div class="item_price">$11000</div>
             <a class="item_add" href="javascript:;"> Añadir al carrito </a>
           </div>
           <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
-            <h2 class="item_name">Pizza</h2>
-            <img class="item_image" src="./scss/img/pizza.JPG" alt="Pizza" style="width: 200px;"/>
-            <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
-            <div class="item_price">$12000</div>
-            <a class="item_add" href="javascript:;"> Añadir al carrito </a>
-          </div>
-          <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
-            <h2 class="item_name">Pescado</h2>
-            <img class="item_image" src="./scss/img/pescado.JPG" alt="Pescado" style="width: 200px;"/>
-            <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
-            <div class="item_price">$14000</div>
-            <a class="item_add" href="javascript:;"> Añadir al carrito </a>
-          </div>
-          <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
-            <h2 class="item_name">Pinchos de pollo</h2>
-            <img class="item_image" src="./scss/img/pichos.JPG" alt="Pinchos de pollo" style="width: 200px;"/>
+            <h2 class="item_name">Lechona</h2>
+            <img class="item_image" src="./scss/img/IMG2/lechona.jpg" alt="Lechona" style="width: 200px;"/>
             <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
             <div class="item_price">$17000</div>
             <a class="item_add" href="javascript:;"> Añadir al carrito </a>
           </div>
           <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
-            <h2 class="item_name">Burrito</h2>
-            <img class="item_image" src="./scss/img/burrito.JPG" alt="Burrito" style="width: 200px;"/>
+            <h2 class="item_name">Tamal</h2>
+            <img class="item_image" src="./scss/img/IMG2/tamal.jpg" alt="Tamal" style="width: 200px;"/>
             <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
-            <div class="item_price">$13000</div>
+            <div class="item_price">$6000</div>
             <a class="item_add" href="javascript:;"> Añadir al carrito </a>
           </div>
           <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
-            <h2 class="item_name">Ensalada</h2>
-            <img class="item_image" src="./scss/img/ensalada.JPG" alt="Ensalada" style="width: 200px;"/>
+            <h2 class="item_name">Mote De Queso</h2>
+            <img class="item_image" src="./scss/img/IMG2/motede queso.jpg" alt="Mote De Queso" style="width: 200px;"/>
             <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
-            <div class="item_price">$10000</div>
+            <div class="item_price">$8700</div>
             <a class="item_add" href="javascript:;"> Añadir al carrito </a>
           </div>
           <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
-            <h2 class="item_name">Pastas</h2>
-            <img class="item_image" src="./scss/img/pasta.JPG" alt="Pasta" style="width: 200px;"/>
+            <h2 class="item_name">Arroz Con Coco</h2>
+            <img class="item_image" src="./scss/img/IMG2/arrozconcoco.jpg" alt="Arroz Con Coco" style="width: 200px;"/>
+            <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
+            <div class="item_price">$9000</div>
+            <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+          </div>
+          <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+            <h2 class="item_name">Cuy Asado</h2>
+            <img class="item_image" src="./scss/img/IMG2/cuyasado.jpg" alt="Cuy Asado" style="width: 200px;"/>
             <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
             <div class="item_price">$21000</div>
             <a class="item_add" href="javascript:;"> Añadir al carrito </a>
           </div>
           <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
-            <h2 class="item_name">Menú de la casa</h2>
-            <img class="item_image" src="./scss/img/menu.JPG" alt="Menu" style="width: 200px;"/>
+            <h2 class="item_name">Mamona</h2>
+            <img class="item_image" src="./scss/img/IMG2/mamona.jpg" alt="Mamona" style="width: 200px;"/>
             <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
-            <div class="item_price">$22000</div>
+            <div class="item_price">$19000</div>
+            <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+          </div>
+          <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+            <h2 class="item_name">Jugo Piña</h2>
+            <img class="item_image" src="./scss/img/IMG3/jugopiña.jpg" alt="Jugo Piña" style="width: 200px;"/>
+            <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
+            <div class="item_price">$4000</div>
+            <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+          </div>
+          <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+            <h2 class="item_name">Jugo Mango</h2>
+            <img class="item_image" src="./scss/img/IMG3/jugodemango.jpg" alt="Jugo Mango" style="width: 200px;"/>
+            <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
+            <div class="item_price">$3800</div>
+            <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+          </div>
+          <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+            <h2 class="item_name">Jugo Guanabana</h2>
+            <img class="item_image" src="./scss/img/IMG3/jugoguanabana.jpg" alt="Jugo Guanabana" style="width: 200px;"/>
+            <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
+            <div class="item_price">$4500</div>
+            <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+          </div>
+          <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+            <h2 class="item_name">Jugo Borojo</h2>
+            <img class="item_image" src="./scss/img/IMG3/jugoborojo.png" alt="Jugo Borojo" style="width: 200px;"/>
+            <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
+            <div class="item_price">$5000</div>
+            <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+          </div>
+          <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+            <h2 class="item_name">Jugo Maracuya</h2>
+            <img class="item_image" src="./scss/img/IMG3/JUGOMARACUYA.jpg" alt="Jugo Maracuya" style="width: 200px;"/>
+            <input class="item_Quantity" type="number" min="1" max="10" value="0"/>
+            <div class="item_price">$3500</div>
             <a class="item_add" href="javascript:;"> Añadir al carrito </a>
           </div>
         </div>
@@ -236,7 +273,7 @@
     </div>
   </div>
 </div>
-
+          
   <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark bg-dark">
   <!-- Footer Links -->

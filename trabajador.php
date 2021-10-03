@@ -112,21 +112,21 @@
     <div class="col-sm-10">
     <?php
       include('conexion.php');
-      if((isset($_POST['codigo']) && !empty($_POST['codigo']))
-      && (isset($_POST['nombri']) && !empty($_POST['nombri']))
-      && (isset($_POST['cedule']) && !empty($_POST['cedule']))
-      && (isset($_POST['passwo']) && !empty($_POST['passwo']))){
+      if((isset($_POST['cedula']) && !empty($_POST['cedula']))
+      && (isset($_POST['nombre']) && !empty($_POST['nombre']))
+      && (isset($_POST['email']) && !empty($_POST['email']))
+      && (isset($_POST['password']) && !empty($_POST['password']))){
 
 
-        $codigo = $_POST['codigo'];
-        $nombri = $_POST['nombri'];
-        $cedule = $_POST['cedule'];
-        $passwo = $_POST['passwo'];
+        $cedula = $_POST['cedula'];
+        $nombre = $_POST['nombre'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
 
         
         
 
-        $query = "INSERT INTO `trabajadores` (codigo, nombre, cedula, password) VALUES ('$codigo', '$nombri', '$cedule', '$passwo')";
+        $query = "INSERT INTO `admini` (cedula, nombre, email, password) VALUES ('$cedula', '$nombre', '$email', '$password')";
           $result = mysqli_query($connection, $query);
           echo "<center>Tú mensaje fue enviado con exito </br nos pondremos en contacto con usted pronto.</center>";
         
@@ -135,35 +135,35 @@
       <div class="row">
         <div class="container-fluid">
           <div  class="container py-5">
-					<form class="form-contact" method="POST">
+					<form action="trabajador.php" class="form-contact" method="POST" >
 						<h2 class="form-contact-heading">Ingresa tus datos para registrarte</h2>
 						<div class="form-group">
-            <label for="text">Codigo:</label>
+            <label for="ce">Cedula:</label>
               <div class="input-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text bg-light"><i class="fas fa-user"></i></span>
                 </div>
-                <input type="text" class="form-control" placeholder="CodigoExample:AA8135" id="text" name="codigo" required>
+                <input type="text" class="form-control" placeholder="CodigoExample:AA8135" id="cedula" name="cedula" required>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="name">Nombre Completo:</label>
+              <label for="nombre">Nombre Completo:</label>
               <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text bg-light"><i class="fas fa-envelope"></i></span>
               </div>
-              <input type="text" class="form-control" placeholder="Su nombre y apellido" id="name" name="nombri" required>
+              <input type="text" class="form-control" placeholder="Su nombre y apellido" id="nombre" name="nombre" required>
               </div>    
             </div>
 
             <div class="form-group">
-            <label for="imputCedula">Cedula</label>
+            <label for="email">Email</label>
               <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text bg-light"><i class="fas fa-mobile-alt"></i></span>
               </div>
-              <input type="number" class="form-control" placeholder="Tú Cedula" id="imputCedula" name="cedule" required>
+              <input type="email" class="form-control" placeholder="Tú Cedula" id="email" name="email" required>
               </div>    
             </div>
 						
@@ -173,7 +173,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text bg-light"><i class="fas fa-unlock-alt"></i></span>
                 </div>
-                <input type="password" class="form-control" placeholder="Tú contraseña" id="pwd" name="passwo" required>
+                <input type="password" class="form-control" placeholder="Tú contraseña" id="pwd" name="password" required>
               </div>
             </div>
 						<button class="btn btn-lg btn-primary btn-block" type="submit">Enviar Formulario</button>

@@ -95,6 +95,9 @@
       <h2>Menú</h2>
       <ul class="nav nav-pills flex-column">
       <li class="nav-item ">
+      <li class="nav-item">
+          <a class="nav-link" href="admistracion.html">Inicio</a>
+        </li>
           <a class="nav-link" href="empleados.php">Ingresar Empleados</a>
         </li>
         <li class="nav-item">
@@ -118,7 +121,9 @@
       && (isset($_POST['TELEFONO']) && !empty($_POST['TELEFONO']))
       && (isset($_POST['DIRECCION_EMPLEADO']) && !empty($_POST['DIRECCION_EMPLEADO']))
       && (isset($_POST['CARGO']) && !empty($_POST['CARGO']))
-      && (isset($_POST['ID_ESTABLECIMIENTO']) && !empty($_POST['ID_ESTABLECIMIENTO']))){
+      && (isset($_POST['ID_ESTABLECIMIENTO']) && !empty($_POST['ID_ESTABLECIMIENTO']))
+      && (isset($_POST['CORREO']) && !empty($_POST['CORREO']))
+      && (isset($_POST['PASSWORD']) && !empty($_POST['PASSWORD']))){
 
         $ID_EMPLEADO = $_POST['ID_EMPLEADO'];
         $NOM_EMPLEADO = $_POST['NOM_EMPLEADO'];
@@ -127,11 +132,13 @@
         $DIRECCION_EMPLEADO = $_POST['DIRECCION_EMPLEADO'];
         $CARGO = $_POST['CARGO'];
         $ID_ESTABLECIMIENTO = $_POST['ID_ESTABLECIMIENTO'];
+        $CORREO = $_POST['CORREO'];
+        $PASSWORD = $_POST['PASSWORD'];
 
         
         
 
-        $query = "UPDATE `empleados` SET NOM_EMPLEADO = '$NOM_EMPLEADO', APELLIDO_EMPLEADO = '$APELLIDO_EMPLEADO', TELEFONO = '$TELEFONO', DIRECCION_EMPLEADO = '$DIRECCION_EMPLEADO', CARGO = '$CARGO', ID_ESTABLECIMIENTO = '$ID_ESTABLECIMIENTO' WHERE ID_EMPLEADO = '$ID_EMPLEADO'";
+        $query = "UPDATE `empleados` SET NOM_EMPLEADO = '$NOM_EMPLEADO', APELLIDO_EMPLEADO = '$APELLIDO_EMPLEADO', TELEFONO = '$TELEFONO', DIRECCION_EMPLEADO = '$DIRECCION_EMPLEADO', CARGO = '$CARGO', ID_ESTABLECIMIENTO = '$ID_ESTABLECIMIENTO', CORREO = '$CORREO', PASSWORD = '$PASSWORD' WHERE ID_EMPLEADO = '$ID_EMPLEADO'";
           $result = mysqli_query($connection, $query);
           echo "<center>Tú mensaje fue enviado con exito </br nos pondremos en contacto con usted pronto.</center>";
         
@@ -210,10 +217,31 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text bg-light"><i class="fas fa-building"></i></span>
                 </div>
-                <input type="number" class="form-control" placeholder="Ingrese su establecimiento" id="ID_ESTABLECIMIENTO" name="ID_ESTABLECIMIENTO" required>
+                <input type="varchar" class="form-control" placeholder="Ingrese su establecimiento" id="ID_ESTABLECIMIENTO" name="ID_ESTABLECIMIENTO" required>
               </div>
             </div>
             
+
+            <div class="form-group">
+              <label for="CORREO">Email:</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-light"><i class='fa fa-envelope'></i></span>
+                </div>
+                <input type="email" class="form-control" placeholder="Ingrese su correo" id="CORREO" name="CORREO" required>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="PASSWORD">Password:</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-light"><i class='fa fa-unlock-alt'></i></i></span>
+                </div>
+                <input type="password" class="form-control" placeholder="Ingrese su contraseña" id="PASSWORD" name="PASSWORD" required>
+              </div>
+            </div>
 						<button class="btn btn-lg btn-primary btn-block" type="submit">Enviar Formulario</button>
      			</form>
           </div>

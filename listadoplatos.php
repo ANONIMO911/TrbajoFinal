@@ -83,7 +83,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
     </table>
 <hr/>
 
-
+<a href="platos.php" style="text-decoration: none rgb(20, 20, 20);" >Regresar</a>
 </div>
 <hr/>
 </article>

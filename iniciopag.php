@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
         <div class="view">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/03/05/20/04/appetite-1238636_960_720.jpg 1x, https://cdn.pixabay.com/photo/2016/03/05/20/04/appetite-1238636_1280.jpg 2x" alt="First slide">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/08/07/01/16/inside-2598319_640.jpg 1x, https://cdn.pixabay.com/photo/2017/08/07/01/16/inside-2598319_1280.jpg 2x" alt="First slide">
           <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
@@ -37,7 +37,7 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_960_720.jpg 1x, https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg 2x" alt="Second slide">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083376_640.jpg" alt="Second slide">
           <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
@@ -48,7 +48,7 @@
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg 1x, https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg 2x" alt="Third slide">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/07/02/10/38/woman-828888_640.jpg 1x, https://cdn.pixabay.com/photo/2015/07/02/10/38/woman-828888_1280.jpg 2x" alt="Third slide">
           <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
@@ -80,10 +80,10 @@
     <div class="collapse navbar-collapse" id="collpasibleNavar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="contacto.php">Conviértete en afiliado</a>
+          <a class="nav-link" href="contacto2.php">Conviértete en afiliado</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  active" href="iniciosecc.html">Su cuenta</a>
+          <a class="nav-link  active" href="iniciosecc.php">Su cuenta</a>
         </li>
       </ul>
     </div>
@@ -94,10 +94,13 @@
       <h2>Menú</h2>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="clienteingreso.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="gastronomia.html">Gastronomía</a>
+          <a class="nav-link" href="carritopaga.html">Comidas Tipicas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carritopaga2.html">Comidas Rapidas</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="galeria.html">Galería</a>
@@ -113,21 +116,31 @@
       <div class="row">
         <div class="container-fluid">
           <div  class="container py-5">
-            <form>
+            <form action="iniciopagsel.php" method="POST">
               <div class="form-group">
-                <label for="email">Email address:</label>
-                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                <label for="CORREO">Email address:</label>
+                <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-light"><i class='fa fa-envelope'></i></span>
+                </div>
+                <input type="email" class="form-control" placeholder="Enter email" id="CORREO" name="CORREO">
+                </div>
               </div>
               <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                <label for="PASSWORD">Password:</label>
+                <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-light"><i class='fa fa-unlock-alt'></i></i></span>
+                </div>
+                <input type="password" class="form-control" placeholder="Enter password" id="PASSWORD" name="PASSWORD">
+                </div>
               </div>
               <div class="form-group form-check">
                 <label class="form-check-label">
                   <input class="form-check-input" type="checkbox"> Remember me
                 </label>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">Ingresar</button>
             </form>
           </div>
         </div>
@@ -213,7 +226,7 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright
+  <div class="footer-copyright text-center py-3 text-white">©️ 2020 Copyright
     
   </div>
   <!-- Copyright -->

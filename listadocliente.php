@@ -68,6 +68,8 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
     <td><h3>APELLIDO CLIENTE</h3></td>
     <td><h3>TELEFONO CLIENTE</h3></td>
     <td><h3>DIRECCION CLIENTE</h3></td>
+    <td><h3>CORREO CLIENTE</h3></td>
+   <!-- <td><h3>CONTRASEÑA CLIENTE</h3></td>-->
    
   </tr>
 <?php
@@ -79,6 +81,8 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
       <td ><?php echo $row_Recordset1['APELLIDO_CLIENTE'];  ?></td>
       <td ><?php echo $row_Recordset1['TELEF_CLIENT'];  ?></td>
       <td ><?php echo $row_Recordset1['DIRECCION_CLIENTE'];  ?></td>
+      <td ><?php echo $row_Recordset1['CORREO'];  ?></td>
+     <!-- <td ><?php echo $row_Recordset1['PASSWORD'];  ?></td>-->
      
 	</tr>
     <?php
@@ -86,7 +90,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
     </table>
 <hr/>
 
-
+<a href="contacto.php" style="text-decoration: none rgb(20, 20, 20);" >Regresar</a>
 </div>
 <hr/>
 </article>

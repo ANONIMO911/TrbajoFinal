@@ -95,7 +95,7 @@
       <h2>Menú</h2>
       <ul class="nav nav-pills flex-column">
       <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="admistracion.html">Inicio</a>
         </li>
       <li class="nav-item">
           <a class="nav-link active" href="platos.php">Ingresar Platos</a>

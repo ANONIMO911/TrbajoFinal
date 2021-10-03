@@ -80,10 +80,10 @@
   <div class="collapse navbar-collapse" id="collpasibleNavar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="contacto2.php">Conviértete en afiliado</a>
+        <a class="nav-link" href="carritotipico.html">volver</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="iniciopag.php">Su cuenta</a>
+        <a class="nav-link" href=""></a>
       </li>
     </ul>
   </div>
@@ -94,10 +94,10 @@
       <h2>Menú</h2>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Inicio</a>
+          <a class="nav-link " href="index.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="carritotipico.html">Carrito tipico</a>
+        <!--   <a class="nav-link" href="carritotipico.html">Carrito tipico</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="gastronomia.html">Carrito Rapidas</a>
@@ -107,7 +107,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="fechas.html">Fechas especiales</a>
-        </li>
+        </li> -->
       </ul>
       <hr class=" d-sm-nome">
     </div>
@@ -133,35 +133,34 @@
         
         
 
-        $query = "INSERT INTO `clientes` (ID_CLIENTE, NOM_CLIENTE, APELLIDO_CLIENTE, DIRECCION_CLIENTE, TELEF_CLIENT, CORREO, PASSWORD) VALUES ('$ID_CLIENTE', '$NOM_CLIENTE', '$APELLIDO_CLIENTE', '$DIRECCION_CLIENTE','$TELEF_CLIENT', '$CORREO', '$PASSWORD')";
+        $query = "INSERT INTO `clientes` (ID_CLIENTE, NOM_CLIENTE, APELLIDO_CLIENTE, DIRECCION_CLIENTE,TELEF_CLIENT, CORREO, PASSWORD) VALUES ('$ID_CLIENTE', '$NOM_CLIENTE', '$APELLIDO_CLIENTE', '$DIRECCION_CLIENTE', '$TELEF_CLIENT', '$CORREO', '$PASSWORD')";
           $result = mysqli_query($connection, $query);
-          echo "<center> YA PUEDES INICIAR SESSION </br nos pondremos en contacto con usted pronto.</center>";
-          
+          echo "<center>Tú mensaje fue enviado con exito </br nos pondremos en contacto con usted pronto.</center>";
         
       }
       ?>
       <div class="row">
         <div class="container-fluid">
           <div  class="container py-5">
-					<form  class="form-contact" method="POST">
+					<form class="form-contact" method="POST">
 						<h2 class="form-contact-heading">Ingresa tus datos para registrarte</h2>
 						<div class="form-group">
-            <label for="ID_CLIENTE">ID:</label>
+            <label for="ID_CLI">ID:</label>
               <div class="input-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text bg-light"><i class="fas fa-address-card"></i></span>
                 </div>
-                <input type="text" class="form-control" placeholder="Ingrese su id" id="ID_CLIENTE" name="ID_CLIENTE" required>
+                <input type="text" class="form-control" placeholder="Ingrese su id" id="ID_CLI" name="ID_CLIENTE" required>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="NOM_CLIENTE">Nombres:</label>
+              <label for="NOM_CLI">Nombres:</label>
               <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text bg-light"><i class="fas fa-users"></i></span>
               </div>
-              <input type="text" class="form-control" placeholder="Ingrese sus nonbres" id="NOM_CLIENTE" name="NOM_CLIENTE" required>
+              <input type="text" class="form-control" placeholder="Ingrese sus nonbres" id="NOM_CLI" name="NOM_CLIENTE" required>
               </div>    
             </div>
 
@@ -171,7 +170,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text bg-light"><i class="fas fa-users"></i></i></span>
               </div>
-              <input type="text" class="form-control" placeholder="Ingrese sus apellidos" id="APELLIDO_CLIENTE" name="APELLIDO_CLIENTE" required>
+              <input type="text" class="form-control" placeholder="Ingrese sus apellidos" id="APELLIDO_CLI" name="APELLIDO_CLIENTE" required>
               </div>    
             </div>
 
@@ -186,12 +185,12 @@
             </div>
 
             <div class="form-group">
-              <label for="DIRECCION_CLIENTE">Direccion:</label>
+              <label for="DIRECCION_CLI">Direccion:</label>
               <div class="input-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text bg-light"><i class="fas fa-street-view"></i></span>
                 </div>
-                <input type="text" class="form-control" placeholder="Ingresa tu direccion" id="DIRECCION_CLIENTE" name="DIRECCION_CLIENTE" required>
+                <input type="text" class="form-control" placeholder="Ingresa tu direccion" id="DIRECCION_CLI" name="DIRECCION_CLIENTE" required>
               </div>
             </div>
 
@@ -250,13 +249,13 @@
         <h6 class=" font-weight-bold">Servicios</h6>
         <hr class="bg-warning accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <p>
-          <a href="galeria.html" class="text-white">Galería</a>
+          <a href="" class="text-white">Galería</a>
         </p>
         <p>
-          <a href="gastronomia.html" class="text-white">Gastronomía</a>
+          <a href="" class="text-white">Gastronomía</a>
         </p>
         <p>
-          <a href="fechas.html" class="text-white">Fechas especiales</a>
+          <a href="" class="text-white">Fechas especiales</a>
         </p>
 
       </div>
@@ -269,10 +268,10 @@
         <h6 class="text-uppercase font-weight-bold">ENLACES ÚTILES</h6>
         <hr class="bg-warning accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <p>
-          <a href="iniciosecc.html" class="text-white">Su cuenta</a>
+          <!--<a href="iniciosecc.html" class="text-white">Su cuenta</a> -->
         </p>
         <p>
-          <a href="contacto.php" class="text-white">Conviértete en afiliado</a>
+          <a href="" class="text-white"></a>
         </p>
       </div>
       <!-- Grid column -->

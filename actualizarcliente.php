@@ -96,6 +96,9 @@
       <h2>Menú</h2>
       <ul class="nav nav-pills flex-column">
       <li class="nav-item">
+          <a class="nav-link" href="admistracion.html">Ininio</a>
+        </li>
+      <li class="nav-item">
           <a class="nav-link" href="contacto.php">Ingresar Cliente</a>
         </li>
         <li class="nav-item">
@@ -117,18 +120,23 @@
       && (isset($_POST['NOM_CLIENTE']) && !empty($_POST['NOM_CLIENTE']))
       && (isset($_POST['APELLIDO_CLIENTE']) && !empty($_POST['APELLIDO_CLIENTE']))
       && (isset($_POST['DIRECCION_CLIENTE']) && !empty($_POST['DIRECCION_CLIENTE']))
-      && (isset($_POST['TELEF_CLIENT']) && !empty($_POST['TELEF_CLIENT']))){
+      && (isset($_POST['TELEF_CLIENT']) && !empty($_POST['TELEF_CLIENT']))
+      && (isset($_POST['CORREO']) && !empty($_POST['CORREO']))
+      && (isset($_POST['PASSWORD']) && !empty($_POST['PASSWORD']))){
 
         $ID_CLIENTE = $_POST['ID_CLIENTE'];
         $NOM_CLIENTE = $_POST['NOM_CLIENTE'];
         $APELLIDO_CLIENTE = $_POST['APELLIDO_CLIENTE'];
         $DIRECCION_CLIENTE = $_POST['DIRECCION_CLIENTE'];
         $TELEF_CLIENT = $_POST['TELEF_CLIENT'];
+        $CORREO = $_POST['CORREO'];
+        $PASSWORD = $_POST['PASSWORD'];
+
 
         
         
 
-        $query = "UPDATE `clientes` SET NOM_CLIENTE = '$ID_CLIENTE', APELLIDO_CLIENTE = '$APELLIDO_CLIENTE', DIRECCION_CLIENTE = '$DIRECCION_CLIENTE', TELEF_CLIENT = '$TELEF_CLIENT', VALUES ID_CLIENTE  = '$NOM_CLIENTE'";
+        $query = "UPDATE `clientes` SET NOM_CLIENTE = '$NOM_CLIENTE', APELLIDO_CLIENTE = '$APELLIDO_CLIENTE', DIRECCION_CLIENTE = '$DIRECCION_CLIENTE', TELEF_CLIENT = '$TELEF_CLIENT', CORREO = '$CORREO', PASSWORD = '$PASSWORD' WHERE ID_CLIENTE  = '$ID_CLIENTE'";
           $result = mysqli_query($connection, $query);
           echo "<center>Tú mensaje fue enviado con exito </br nos pondremos en contacto con usted pronto.</center>";
         
@@ -186,6 +194,27 @@
                   <span class="input-group-text bg-light"><i class="fas fa-street-view"></i></span>
                 </div>
                 <input type="text" class="form-control" placeholder="Ingresa tu direccion" id="DIRECCION_CLI" name="DIRECCION_CLIENTE" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="CORREO">Email:</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-light"><i class='fa fa-envelope'></i></span>
+                </div>
+                <input type="email" class="form-control" placeholder="Ingrese su correo" id="CORREO" name="CORREO" required>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="PASSWORD">Password:</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-light"><i class='fa fa-unlock-alt'></i></i></span>
+                </div>
+                <input type="password" class="form-control" placeholder="Ingrese su contraseña" id="PASSWORD" name="PASSWORD" required>
               </div>
             </div>
 

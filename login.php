@@ -84,10 +84,10 @@ session_start();
     <div class="collapse navbar-collapse" id="collpasibleNavar">
       <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="contacto.php">Conviértete en afiliado</a>
+        <a class="nav-link" href="contacto2.php">Conviértete en afiliado</a>
       </li>
         <li class="nav-item">
-          <a class="nav-link" href="iniciosecc.html">Su cuenta</a>
+          <a class="nav-link" href="iniciosecc.php">Su cuenta</a>
         </li>
       </ul>
     </div>
@@ -95,23 +95,24 @@ session_start();
 <div class="container" style="margin-top: 30px;">
   <div class="row">
     <div class="col-sm-2">
-      <h2>Menú</h2>
+    <h2>Menú</h2>
       <ul class="nav nav-pills flex-column">
-      <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
-        </li>
-      <li class="nav-item">
-          <a class="nav-link active" href="contacto.php">Ingresar Cliente</a>
+        <li class="nav-item">
+          <a class="nav-link active" href="admistracion.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="actualizarcliente.php">Actualizar Cliente</a>
+          <a class="nav-link" href="##"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="eliminarcliente.php">Eliminar Cliente</a>
+          <a class="nav-link" href="##"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="listadocliente.php">Listado Clientes</a>
+          <a class="nav-link" href="##"></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="##"></a>
+        </li>
+      </ul>
       </ul>
       <hr class=" d-sm-nome">
     </div>
@@ -132,7 +133,7 @@ session_start();
         
         
 
-        $query = "INSERT INTO `admin` (cedula, nombre, email, password) VALUES ('$cedula', '$nombre', '$email', '$password')";
+        $query = "INSERT INTO `admini` (cedula, nombre, email, password) VALUES ('$cedula', '$nombre', '$email', '$password')";
           $result = mysqli_query($connection, $query);
           echo "<center>Tú mensaje fue enviado con exito </br nos pondremos en contacto con usted pronto.</center>";
         

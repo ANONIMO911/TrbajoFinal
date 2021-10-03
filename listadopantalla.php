@@ -70,6 +70,8 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
     <td><h3>DIRECCION EMPLEADO</h3></td>
     <td><h3>CARGO</h3></td>
     <td><h3>ID ESTABLECIMIENTO</h3></td>
+    <td><h3>CORREO EMPLEADO</h3></td>
+    <!--<td><h3>CONTRASEÑA</h3></td> -->
   </tr>
 <?php
    do {
@@ -82,13 +84,15 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
       <td ><?php echo $row_Recordset1['DIRECCION_EMPLEADO'];  ?></td>
       <td ><?php echo $row_Recordset1['CARGO'];  ?></td>
       <td ><?php echo $row_Recordset1['ID_ESTABLECIMIENTO'];  ?></td>
+      <td ><?php echo $row_Recordset1['CORREO'];  ?></td>
+    <!--  <td ><?php echo $row_Recordset1['PASSWORD'];  ?></td> -->
 	</tr>
     <?php
 		 } while ($row_Recordset1 = mysqli_fetch_assoc($Recordset1)); ?>
     </table>
 <hr/>
 
-
+<a href="empleados.php" style="text-decoration: none rgb(20, 20, 20);" >Regresar</a>
 </div>
 <hr/>
 </article>
